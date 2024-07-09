@@ -6,11 +6,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('QUOTES'), centerTitle: true),
+      appBar: AppBar(title: const Text('QUOTES'), centerTitle: true),
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [
             Color(0xff40c9ff),
@@ -18,13 +18,13 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        child: Column(children: [
+        child: const Column(children: [
           Stack(
             children: [
               Card(
                 color: Colors.white,
-                child:Text('The greatest glory in living lies not in never falling, but in rising every time we fall. '),
                 elevation: 2,
+                child:Text('The greatest glory in living lies not in never falling, but in rising every time we fall.'),
               ),
             ],
           ),
